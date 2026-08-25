@@ -1,37 +1,30 @@
-# PearlThoughts DevOps – Day 1 Task 1
+# Day 1 – Task 1: Gitea Local Setup
 
-## Task: Gitea Setup and Repository Management
+## Objective
 
-This submission demonstrates the setup and usage of a self-hosted Gitea instance for Git repository management.
+Set up Gitea locally from source, configure it to use SQLite3, build and run the Gitea server, create an administrator account, and verify that the application is running successfully through the web interface.
+
+---
 
 ## Environment
 
-- OS: macOS
-- Git: Git CLI
-- Repository Platform: Gitea
-- Gitea URL: http://localhost:3000
-- Repository: pearlthoughts-devops
-- Branch: main
+- **Operating System:** macOS
+- **Architecture:** ARM64
+- **Version Control:** Git
+- **Application:** Gitea
+- **Database:** SQLite3
+- **Build Tool:** Make
+- **Runtime:** Go
+- **Package Manager:** Homebrew
+- **Git LFS:** Git LFS
+- **Repository:** Gitea
 
-## Work Completed
+---
 
-- Set up Gitea locally
-- Started and accessed the Gitea web interface
-- Created a repository in Gitea
-- Configured Git remote
-- Pushed repository content to Gitea
-- Verified the repository through the Gitea web interface
+## 1. Clone the Gitea Repository
 
-## Repository
-
-Gitea repository:
-
-`http://localhost:3000/abdulrahman/pearlthoughts-devops`
-
-## Git Commands Used
+The Gitea source code was cloned from the official Gitea repository.
 
 ```bash
-git init
-git branch -M main
-git remote add gitea http://localhost:3000/abdulrahman/pearlthoughts-devops.git
-git push -u gitea main
+git clone https://github.com/go-gitea/gitea.git
+cd gitea
