@@ -2,28 +2,22 @@
 
 ## Objective
 
-Set up Gitea locally from source, configure it to use SQLite3, build and run the Gitea server, create an administrator account, and verify that the application is running successfully through the web interface.
-
----
+Set up Gitea locally from source, build and run the Gitea server, configure SQLite3, create an administrator account, and verify the application through the web interface.
 
 ## Environment
 
-- **Operating System:** macOS
-- **Architecture:** ARM64
-- **Version Control:** Git
-- **Application:** Gitea
-- **Database:** SQLite3
-- **Build Tool:** Make
-- **Runtime:** Go
-- **Package Manager:** Homebrew
-- **Git LFS:** Git LFS
-- **Repository:** Gitea
+- OS: macOS ARM64
+- Go: 1.27.0
+- Node.js: 26.7.0
+- pnpm: 11.22.0
+- Make: 3.81
+- Git LFS: 3.7.1
+- Database: SQLite3
+- Gitea: 1.28.0+dev-408-g9eb4a9afad
 
----
+## Setup
 
-## 1. Clone the Gitea Repository
-
-The Gitea source code was cloned from the official Gitea repository.
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/go-gitea/gitea.git
